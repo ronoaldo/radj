@@ -1,0 +1,589 @@
+<ui version="4.0" >
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>753</width>
+    <height>705</height>
+   </rect>
+  </property>
+  <property name="sizePolicy" >
+   <sizepolicy>
+    <hsizetype>0</hsizetype>
+    <vsizetype>0</vsizetype>
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle" >
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget" >
+   <layout class="QGridLayout" >
+    <property name="margin" >
+     <number>9</number>
+    </property>
+    <property name="spacing" >
+     <number>6</number>
+    </property>
+    <item row="1" column="0" >
+     <layout class="QVBoxLayout" >
+      <property name="margin" >
+       <number>0</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="label_current_music" >
+        <property name="font" >
+         <font>
+          <family>Arial</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text" >
+         <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-size:14pt; font-weight:600; color:#ff0000;">Música Atual&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" >
+        <property name="margin" >
+         <number>0</number>
+        </property>
+        <property name="spacing" >
+         <number>2</number>
+        </property>
+        <item>
+         <widget class="QTextBrowser" name="text_music_current" >
+          <property name="sizePolicy" >
+           <sizepolicy>
+            <hsizetype>0</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize" >
+           <size>
+            <width>321</width>
+            <height>111</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSlider" name="volume_current" >
+          <property name="maximumSize" >
+           <size>
+            <width>16</width>
+            <height>101</height>
+           </size>
+          </property>
+          <property name="orientation" >
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="3" column="0" >
+     <layout class="QVBoxLayout" >
+      <property name="margin" >
+       <number>0</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="label_next_music" >
+        <property name="font" >
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text" >
+         <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-size:12pt; font-weight:600;">Próxima Música&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" >
+        <property name="margin" >
+         <number>0</number>
+        </property>
+        <property name="spacing" >
+         <number>2</number>
+        </property>
+        <item>
+         <widget class="QTextBrowser" name="text_music_next" >
+          <property name="sizePolicy" >
+           <sizepolicy>
+            <hsizetype>0</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize" >
+           <size>
+            <width>256</width>
+            <height>111</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSlider" name="volume_next" >
+          <property name="maximumSize" >
+           <size>
+            <width>15</width>
+            <height>101</height>
+           </size>
+          </property>
+          <property name="orientation" >
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0" >
+     <layout class="QVBoxLayout" >
+      <property name="margin" >
+       <number>0</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="label_previous_music" >
+        <property name="font" >
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text" >
+         <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Arial'; font-size:12pt; font-weight:600; font-style:normal; text-decoration:none;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" color:#a9a9a9;">Música Anterior&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+        </property>
+        <property name="textFormat" >
+         <enum>Qt::RichText</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextBrowser" name="text_music_previous" >
+        <property name="sizePolicy" >
+         <sizepolicy>
+          <hsizetype>0</hsizetype>
+          <vsizetype>0</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>16777215</width>
+          <height>111</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0" >
+     <layout class="QHBoxLayout" >
+      <property name="margin" >
+       <number>0</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="label_remaining_music_time" >
+        <property name="text" >
+         <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-size:12pt; color:#ff0000;">Tempo Remanescente&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTimeEdit" name="timeEdit" >
+        <property name="sizePolicy" >
+         <sizepolicy>
+          <hsizetype>0</hsizetype>
+          <vsizetype>0</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>80</width>
+          <height>21</height>
+         </size>
+        </property>
+        <property name="wrapping" >
+         <bool>false</bool>
+        </property>
+        <property name="frame" >
+         <bool>true</bool>
+        </property>
+        <property name="readOnly" >
+         <bool>true</bool>
+        </property>
+        <property name="buttonSymbols" >
+         <enum>QAbstractSpinBox::PlusMinus</enum>
+        </property>
+        <property name="specialValueText" >
+         <string/>
+        </property>
+        <property name="accelerated" >
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item rowspan="4" row="0" column="1" >
+     <layout class="QVBoxLayout" >
+      <property name="margin" >
+       <number>0</number>
+      </property>
+      <property name="spacing" >
+       <number>2</number>
+      </property>
+      <item>
+       <widget class="QListWidget" name="list_music" />
+      </item>
+     </layout>
+    </item>
+    <item row="4" column="0" colspan="2" >
+     <layout class="QHBoxLayout" >
+      <property name="margin" >
+       <number>0</number>
+      </property>
+      <property name="spacing" >
+       <number>2</number>
+      </property>
+      <item>
+       <widget class="QSlider" name="music_trackbar" >
+        <property name="orientation" >
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>753</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArquivo" >
+    <property name="title" >
+     <string>Arquivo</string>
+    </property>
+    <addaction name="action_Abrir" />
+    <addaction name="separator" />
+    <addaction name="action_Sair" />
+   </widget>
+   <widget class="QMenu" name="menuA_es" >
+    <property name="title" >
+     <string>Ações</string>
+    </property>
+    <addaction name="action_Tocar_Pausar" />
+    <addaction name="action_Parar" />
+    <addaction name="action_Proximo" />
+    <addaction name="action_Anterior" />
+    <addaction name="separator" />
+    <addaction name="action_Primeiro_da_Lista" />
+    <addaction name="action_Ultimo_da_Lista" />
+    <addaction name="separator" />
+    <addaction name="action_Pausa_apos_proximo" />
+   </widget>
+   <widget class="QMenu" name="menuEditar" >
+    <property name="title" >
+     <string>Editar</string>
+    </property>
+   </widget>
+   <addaction name="menuArquivo" />
+   <addaction name="menuEditar" />
+   <addaction name="menuA_es" />
+  </widget>
+  <widget class="QStatusBar" name="statusBar" />
+  <widget class="QToolBar" name="toolBar" >
+   <property name="orientation" >
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <attribute name="toolBarArea" >
+    <number>8</number>
+   </attribute>
+   <addaction name="action_Tocar_Pausar" />
+   <addaction name="action_Pausa_apos_proximo" />
+   <addaction name="action_Parar" />
+   <addaction name="action_Primeiro_da_Lista" />
+   <addaction name="action_Anterior" />
+   <addaction name="action_Proximo" />
+   <addaction name="action_Ultimo_da_Lista" />
+  </widget>
+  <widget class="QToolBar" name="toolBar_2" >
+   <property name="orientation" >
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <attribute name="toolBarArea" >
+    <number>4</number>
+   </attribute>
+   <addaction name="action_Abrir" />
+   <addaction name="action_Sair" />
+   <addaction name="separator" />
+  </widget>
+  <action name="action_Abrir" >
+   <property name="icon" >
+    <iconset>images/fileopen.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Abrir</string>
+   </property>
+  </action>
+  <action name="action_Sair" >
+   <property name="icon" >
+    <iconset>images/exit.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Sair</string>
+   </property>
+  </action>
+  <action name="action_Parar" >
+   <property name="icon" >
+    <iconset>images/player_stop.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Parar</string>
+   </property>
+  </action>
+  <action name="action_Proximo" >
+   <property name="icon" >
+    <iconset>images/player_fwd.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Próximo</string>
+   </property>
+  </action>
+  <action name="action_Anterior" >
+   <property name="icon" >
+    <iconset>images/player_rew.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Anterior</string>
+   </property>
+  </action>
+  <action name="action_Primeiro_da_Lista" >
+   <property name="icon" >
+    <iconset>images/player_start.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Primeiro da Lista</string>
+   </property>
+  </action>
+  <action name="action_Ultimo_da_Lista" >
+   <property name="icon" >
+    <iconset>images/player_end.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Último da Lista</string>
+   </property>
+  </action>
+  <action name="action_Pausa_apos_proximo" >
+   <property name="icon" >
+    <iconset>images/player_time.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Pausa após o próximo</string>
+   </property>
+  </action>
+  <action name="action_Tocar_Pausar" >
+   <property name="icon" >
+    <iconset>images/player_play.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Tocar/Pausar</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>action_Sair</sender>
+   <signal>activated()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>377</x>
+     <y>354</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Tocar_Pausar</sender>
+   <signal>activated()</signal>
+   <receiver>MainWindow</receiver>
+   <slot></slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>377</x>
+     <y>352</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Pausa_apos_proximo</sender>
+   <signal>activated()</signal>
+   <receiver>MainWindow</receiver>
+   <slot></slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>377</x>
+     <y>352</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Parar</sender>
+   <signal>activated()</signal>
+   <receiver>MainWindow</receiver>
+   <slot></slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>377</x>
+     <y>352</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Primeiro_da_Lista</sender>
+   <signal>activated()</signal>
+   <receiver>MainWindow</receiver>
+   <slot></slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>377</x>
+     <y>352</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Anterior</sender>
+   <signal>activated()</signal>
+   <receiver>MainWindow</receiver>
+   <slot></slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>377</x>
+     <y>352</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Proximo</sender>
+   <signal>activated()</signal>
+   <receiver>MainWindow</receiver>
+   <slot></slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>377</x>
+     <y>352</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Ultimo_da_Lista</sender>
+   <signal>activated()</signal>
+   <receiver>MainWindow</receiver>
+   <slot></slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>377</x>
+     <y>352</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>list_music</sender>
+   <signal>itemActivated(QListWidgetItem*)</signal>
+   <receiver>MainWindow</receiver>
+   <slot></slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>517</x>
+     <y>344</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>376</x>
+     <y>352</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
