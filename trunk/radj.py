@@ -208,7 +208,7 @@ class Posicao_Barra(threading.Thread):
             pos = self.player.get_percent_pos()
             self.barra.setValue(pos)
             time.sleep(0.0001)
-        self.tocar(self.other)
+        #self.tocar(self.other)
 
 if __name__ == "__main__":
     app = QtGui.QApplication(sys.argv)
