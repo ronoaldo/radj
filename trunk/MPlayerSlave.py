@@ -174,7 +174,7 @@ class MPlayerSlave:
         self.playin, self.playout, self.playerr = None,None,None
         self.__play_messages = []
         self.__play_messages_pos = 0
-        #self.head_readed = False
+        self.head_readed = False
 
     def stop(self):
         self.quit()
